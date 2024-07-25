@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fashion.css" />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Lora" />
+    <title>Fashion</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html"
+        ><img
+          src="https://rutakale2811.neocities.org/about%20me/RUE%20MAGAZINE/Black%20Beige%20Minimalist%20Simple%20Modern%20Typography%20Vanilla%20Cosmetics%20Logo.png"
+          class="logo"
+      /></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="fashion.html">Fashion</a></li>
+        <li><a href="bridal.html">Bridal</a></li>
+        <li><a href="celebrity.html">Celebrity</a></li>
+        <li><a href="news.html">News</a></li>
+      </ul>
+    </div>
+
+    <header>
+      <h1>Explore The Newest Fashion Trends</h1>
+      <p>Your gateway to the latest fashion trends</p>
+    </header>
+
+    <section>
+      <div class="article animation1">
+        <a
+          href="https://www.vogue.com/sponsored/article/what-to-wear-this-summer-three-of-the-hottest-summer-trends"
+          ><img
+            src="https://rutakale2811.neocities.org/magazine/fashion%20trend.webp"
+            alt="Fashion Article 1"
+        /></a>
+        <div class="article-content">
+          <h2>Summer Vibes</h2>
+          <p>
+            Indulge in the mesmerizing hues of summer fashion. Let the sunshine
+            reflect in your style! Click to read the whole article by the famous
+            Vogue journalists
+          </p>
+        </div>
+      </div>
+
+      <div class="article animation2">
+        <a href="https://www.vogue.com/article/fashion-week-trends"
+          ><img
+            src="https://rutakale2811.neocities.org/magazine/street%20style.webp"
+            alt="Fashion Article 2"
+        /></a>
+        <div class="article-content">
+          <h2>Street Style Chic</h2>
+          <p>
+            Embrace the chaos of the urban jungle. Dive into the unexpected
+            combinations that define street style.Click to read the whole
+            article by the famous Vogue journalists
+          </p>
+        </div>
+      </div>
+
+      <div class="article animation3">
+        <a
+          href="https://www.vogue.com/article/street-style-fashion-week-bohemian-style-trend-revival"
+          ><img
+            src="https://rutakale2811.neocities.org/magazine/bohemian.webp"
+            alt="Fashion Article 3"
+        /></a>
+        <div class="article-content">
+          <h2>Bohemian Dreams</h2>
+          <p>
+            Discover the free-spirited world of bohemian fashion. Unleash your
+            inner wanderer!Click to read the whole article by the famous Vogue
+            journalists
+          </p>
+        </div>
+      </div>
+
+      <div class="article animation4">
+        <a
+          href="https://www.vogue.com/article/dos-and-donts-of-quiet-luxury-understated-elegance"
+          ><img
+            src="https://rutakale2811.neocities.org/magazine/elegant.jpg"
+            alt="Fashion Article 4"
+        /></a>
+        <div class="article-content">
+          <h2>Classic Elegance</h2>
+          <p>
+            Elevate your style with timeless and classic fashion pieces. Make a
+            statement in every moment.Click to read the whole article by the
+            famous Vogue journalists
+          </p>
+        </div>
+      </div>
+
+      <button class="collapsible">Show More</button>
+      <div class="content">
+        <div class="article animation1">
+          <a href="timelessBeauty.html"
+            ><img
+              src="https://rutakale2811.neocities.org/magazine/timeless%20beauty.jpg"
+              alt="Fashion Article 8"
+          /></a>
+          <div class="article-content">
+            <h2>Timeless Beauty</h2>
+            <p>
+              Discover the beauty of timeless fashion. Elevate your style with
+              pieces that transcend trends.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <h3>How You can Reach us</h3>
+      <p>
+        <li>Instagram- @ruemagazine</li>
+        <li>facebook- @ruemagazine</li>
+      </p>
+    </footer>
+
+    <script>
+      // JavaScript for Collapsible Section//
+
+      let collapsible = document.querySelector(".collapsible");
+      let content = document.querySelector(".content");
+
+      collapsible.addEventListener("click", function () {
+        content.style.display =
+          content.style.display === "block" ? "none" : "block";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+/*Added Font*/
+body {
+  font-family: "futura", "lora", "serif";
+}
+
+/*navbar*/
+.navbar {
+  width: 100%;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: beige;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/*logo*/
+.logo {
+  width: 120px;
+  cursor: pointer;
+  border: 6px solid;
+  margin-inline-start: 10px;
+  border: black 6px solid;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: maroon;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+h1 {
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.blog-section {
+  width: 100%;
+}
+
+.blog-section .section-content {
+  width: 85%;
+  margin: 20px auto;
+}
+
+.blog-section .section-content .title {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+}
+
+.blog-section .section-content .title h2 {
+  font-size: 40px;
+  color: maroon;
+  text-transform: uppercase;
+}
+
+.blog-section .section-content .title p {
+  font-size: 18px;
+  color: black;
+  margin-top: 20px;
+}
+
+.blog-section .section-content .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  margin: 25px auto;
+}
+
+.blog-section .section-content .cards .card {
+  width: 100%;
+  background-color: #f7f7f7;
+  position: relative;
+}
+
+.blog-section .section-content .cards .card .article {
+  padding: 15px 20px;
+}
+
+.blog-section .section-content .cards .card .article h4 {
+  font-size: 24px;
+  color: #4a4a4a;
+}
+
+.blog-section .section-content .cards .card .article p {
+  font-size: 18px;
+  margin: 10px 0px;
+  color: #6a6a6a;
+}
+
+.blog-section .section-content .cards .card .article a {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #25c5c5;
+  padding: 8px 15px;
+  margin-left: 10px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.blog-section .section-content .cards .card .posted-date p {
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  background-color: #25c5c5;
+  padding: 6px 15px;
+}
+
+/*Added Media Screen*/
+@media screen and (max-width: 992px) {
+  .blog-section .section-content .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blog-section .section-content .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*footer***/
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-size: 30px;
+  background-color: beige;
+  background: size 30%;
+  border: black solid;
+  text-align: center;
+  list-style: none;
+  height: 8%;
+  border: 3px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+footer li {
+  color: black;
+}
+
+h3 {
+  color: black;
+}

@@ -1,0 +1,324 @@
+/*Added Font*/
+body {
+  font-family: "futura", "lora", "serif";
+  margin: 0;
+}
+
+/*Navbar***/
+.navbar {
+  width: 100%;
+  margin: auto;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: beige;
+  z-index: 2;
+  position: sticky;
+  top: 0;
+}
+
+.banner {
+  width: 100%;
+  height: 188vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(https://rutakale2811.neocities.org/fashion-boutique-zimmermannmadison-interior-285horizontal-1568404664.jpg);
+  background-size: contain;
+  background-position: center;
+}
+
+/*Logo***/
+.logo {
+  width: 120px;
+  cursor: pointer;
+  border: 6px solid;
+  margin-inline-start: 10px;
+  border: black 6px solid;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: solid;
+  color: black;
+  text-transform: uppercase;
+}
+
+.navbar ul li ::after {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: maroon;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li :hover:after {
+  width: 100%;
+}
+
+.content h1 {
+  font-size: 40px;
+}
+
+h1 {
+  color: antiquewhite;
+}
+
+p {
+  color: antiquewhite;
+  font-size: larger;
+  margin-right: 1000px;
+}
+
+.explore h2 {
+  color: aliceblue;
+}
+
+.contact {
+  background-color: aliceblue;
+  text-align: center;
+  font-size: larger;
+}
+
+/*footer***/
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: beige;
+  background: size 30%;
+  border: black solid;
+  text-align: center;
+  list-style: none;
+  height: 8%;
+  border: 3px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer ul {
+  display: flex;
+  flex: 1;
+  gap: 33%;
+}
+
+footer h3 {
+  flex: 1;
+  align-items: start;
+  justify-items: start;
+  text-align: start;
+}
+
+footer li {
+  display: flex;
+  color: black;
+}
+
+h3 {
+  color: black;
+}
+
+/*Slideshow***/
+.slider-holder {
+  margin-top: 0%;
+  width: 600px;
+  height: 500px;
+  background-color: yellow;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+  overflow: hidden;
+}
+
+.image-holder {
+  width: 1800px;
+  background-color: red;
+  height: 500px;
+  clear: both;
+  position: relative;
+
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+  transition: left 2s;
+}
+
+.slider-image {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+#slider-image-1:target ~ .image-holder {
+  left: 0px;
+}
+
+#slider-image-2:target ~ .image-holder {
+  left: -600px;
+}
+
+#slider-image-3:target ~ .image-holder {
+  left: -1200px;
+}
+
+.button-holder {
+  position: relative;
+  top: -20px;
+}
+
+.slider-change {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background-color: brown;
+}
+
+.explore {
+  position: absolute;
+  font-display: left;
+  top: 55%;
+  margin-left: 1px;
+  margin-right: 320px;
+  margin-top: 20%;
+  font-size: 30px;
+}
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+
+  transform: translateY(-40%);
+}
+/*collapsible***/
+input[type="checkbox"] {
+  display: none;
+}
+.lbl-toggle {
+  display: block;
+
+  font-weight: bold;
+
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-right: 1200px;
+  text-align: center;
+
+  padding: 1rem;
+
+  color: rgb(32, 3, 32);
+  background: beige;
+
+  cursor: pointer;
+
+  border-radius: 7px;
+  transition: all 0.25s ease-out;
+}
+
+.lbl-toggle:hover {
+  color: beige;
+}
+
+.collapsible-content .content-inner {
+  background: rgb(157, 84, 84);
+  border-bottom: beige;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: 0.5rem 3rem;
+  margin-right: 1200px;
+}
+
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+
+  transition: max-height 0.25s ease-in-out;
+}
+.collapsible-content .content-inner {
+  display: flex;
+  position: relative;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 700px;
+}
+
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-5px);
+}
+
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/*flip*/
+.flip-content {
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  padding: 30px;
+  font-size: large;
+  border: solid 1px #ccc;
+  font-size: 20px;
+}
+#flip .one {
+  -webkit-transform: translateZ(200px);
+  transform: translateZ(200px);
+}
+
+#flip .two {
+  -webkit-transform: rotateY(90deg) translateZ(200px);
+  transform: rotateY(90deg) translateZ(200px);
+}
+
+#flip {
+  position: relative;
+  margin: 0px;
+  height: 400px;
+  width: 400px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: all 2s ease;
+  transform-style: preserve-3d;
+  transition: all 2s ease;
+}
+#flip:hover {
+  transform: rotateY(-90deg);
+}
+
+.check {
+  position: absolute;
+  height: 300px;
+  width: 200px;
+  padding: 20px;
+  font-size: large;
+  border: solid 1px #ccc;
+  margin-inline-start: 650px;
+  top: 35%;
+}
+
+/*video*/
+#video-container {
+  padding-left: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#video {
+  max-width: 100%;
+  max-height: 100%;
+}

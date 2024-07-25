@@ -1,0 +1,255 @@
+.banner {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(https://rutakale2811.neocities.org/fashion-boutique-zimmermannmadison-interior-285horizontal-1568404664.jpg);
+  background-size: contain;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+/*Added Font*/
+body {
+  font-family: "futura", "lora", "serif";
+}
+
+/*navbar*/
+.navbar {
+  width: 100%;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: beige;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+/*logo*/
+.logo {
+  width: 120px;
+  cursor: pointer;
+  border: 6px solid;
+  margin-inline-start: 10px;
+  border: black 6px solid;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  font-size: 16px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: maroon;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+h1 {
+  color: black;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+header:hover {
+  background-color: #555;
+}
+
+h1 {
+  margin: 5px 0;
+}
+
+section {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/*Adding Hover and text overlay */
+.article {
+  margin: 20px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.article:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.article img {
+  width: 500px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.article:hover img {
+  transform: scale(1.1);
+}
+
+.article-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  padding: 10px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.article:hover .article-content {
+  transform: translateY(0);
+}
+
+/*collapsible*/
+.collapsible {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  transition: height 0.5s ease-in-out;
+}
+
+/*Adding Animations*/
+.animation1 {
+  animation: slide-in 1s ease-in-out;
+}
+
+.animation2 {
+  animation: slide-in 1s ease-in-out;
+}
+
+.animation3 {
+  animation: fade-in 1s ease-in-out;
+}
+
+.animation4 {
+  animation: fade-in 1s ease-in-out infinite;
+}
+
+/*adding keyframes*/
+@keyframes slide-in {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+@keyframes rotate-scale {
+  from {
+    transform: rotate(0) scale(1);
+  }
+  to {
+    transform: rotate(360deg) scale(1.2);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+@keyframes fade-in-delay {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*footer***/
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: beige;
+  background: size 30%;
+  border: black solid;
+  text-align: center;
+  list-style: none;
+  height: 8%;
+  border: 3px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer li {
+  color: black;
+}
+
+h3 {
+  color: black;
+}

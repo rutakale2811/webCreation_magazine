@@ -1,0 +1,267 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/*Added Font */
+body {
+  font-family: "futura", "lora", "serif";
+}
+
+/*navbar*/
+.navbar {
+  width: 100%;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: beige;
+  z-index: 2;
+  position: sticky;
+  top: 0;
+}
+
+/*Logo*/
+.logo {
+  width: 120px;
+  cursor: pointer;
+  border: 6px solid;
+  margin-inline-start: 10px;
+  border: black 6px solid;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: maroon;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+h1 {
+  color: black;
+}
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+}
+
+header {
+  background-color: #fff;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+.main {
+  position: relative;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 50px;
+  margin-bottom: 20px;
+}
+
+/*Added Transition*/
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+/*Added Hover to Text Overlay*/
+.main:hover .text-overlay {
+  opacity: 1;
+}
+
+/*Collapsible*/
+.collapsible {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.collapsible-header {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: background-color 0.3s;
+}
+
+.collapsible-header:hover {
+  background-color: #555;
+}
+
+/*Slideshow*/
+.brideSlide {
+  width: 700px;
+  height: 640px;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  margin-inline-start: 240px;
+}
+
+.brideSlide img {
+  position: absolute;
+  animation: brideSlide 20s infinite;
+  opacity: 0;
+  width: 100%;
+  height: auto;
+}
+
+/*Added Keyframes*/
+@keyframes brideSlide {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+/*Added Animations*/
+.brideSlide img:nth-child(4) {
+  animation-delay: 0s;
+}
+
+.brideSlide img:nth-child(3) {
+  animation-delay: 5s;
+}
+
+.brideSlide img:nth-child(2) {
+  animation-delay: 10s;
+}
+
+.brideSlide img:nth-child(1) {
+  animation-delay: 15s;
+}
+
+/*footer***/
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: beige;
+  background: size 30%;
+  border: black solid;
+  text-align: center;
+  list-style: none;
+  height: 8%;
+  border: 3px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer li {
+  color: black;
+}
+
+h3 {
+  color: black;
+}
+
+/*table*/
+td {
+  text-align: center;
+  
+}
+
+tr:nth-child(odd) {
+  background: rgb(212, 204, 204);
+}
+
+/* for the even rows- Background is pink*/
+tr:nth-child(even) {
+  background: rgb(184, 119, 119);
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 20px auto;
+}
+
+table,
+th,
+td {
+  border: 2px solid #ece6e6;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background: #a45d5d;
+}
+
+td:hover {
+  background-color: aliceblue;
+}
+
+@keyframes changeColor {
+  from {
+    background-color: #a45d5d;
+  }
+  to {
+    background-color: aliceblue;
+  }
+}
